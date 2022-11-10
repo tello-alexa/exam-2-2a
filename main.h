@@ -36,8 +36,8 @@ inline void single_sum_thread(int id, int num_threads, double sum[NUM_THREADS][P
 }
 
 // TODO
-inline void pi_sum_thread(/* add necessary arguments here */)
+inline void pi_sum_thread(double *pi, double sum[NUM_THREADS][PAD], int id, double step)
 {
-    // add code here
+    *pi += sum[id][0] * step;
     sleep(1); // DO NOT REMOVE THIS
 }
